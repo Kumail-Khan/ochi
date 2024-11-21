@@ -2,20 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+#nav-parent {
+  font-family: NM;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
 }
+
+@font-face {
+  font-family: NM;
+  src: url(./fonts/NeueMontreal-Regular.ttf);
+}
+
+@font-face {
+  font-family: FG;
+  src: url(./fonts/FoundersGrotesk-Semibold.ttf);
+}
+
+/* underline */
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cta span {
+  padding-bottom: 4px;
+  padding-right: 15px;
+}
+
+.hover-underline-animation {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* underline end */
+
+/* buttons 1 */
+
+/* From Uiverse.io by mrhyddenn */
+
+/* buttons 1 end */
