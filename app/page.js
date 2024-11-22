@@ -16,7 +16,7 @@ const page = () => {
 
   return (
     <>
-      <div className="w-full h-auto bg-[#f1f1f1] text-black overflow-x-hidden ">
+      <div className="w-full h-auto bg-[#f1f1f1] text-black overflow-x-hidden overflow-y-scroll no-scrollbar">
         <Navbar />
         <Landing />
         <Marqiue />

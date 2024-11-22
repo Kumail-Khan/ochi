@@ -95,8 +95,8 @@ const Eyes2 = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed=".4"
-      className="bg-[#CDEA68] w-full h-auto rounded-tl-3xl rounded-tr-3xl ">
-      <div className="relative textstructure2 flex flex-col items-center justify-center w-full h-auto pt-[6vw]">
+      className="bg-[#CDEA68] w-full h-auto rounded-tl-3xl rounded-tr-3xl max-xl:h-[70vw]">
+      <div className="relative textstructure2 flex flex-col items-center justify-center w-full h-auto pt-[6vw] max-xl:pt-[10vw]">
         {["Ready", "to start", "the project?"].map((items, index) => {
           return (
             <div key={index} className="masker">
@@ -112,7 +112,7 @@ const Eyes2 = () => {
           data-scroll
           data-scroll-section
           data-scroll-speed="-.1"
-          className="absolute left-[35%] mb-[25vw] flex gap-10">
+          className="absolute left-[35%] mb-[25vw] flex gap-10 max-xl:mb-[15vw]">
           <div className="flex items-center justify-center w-[11vw] h-[11vw] rounded-full bg-zinc-100">
             <div className="relative w-[7vw] h-[7vw] rounded-full bg-[#212121]">
               <div
@@ -140,7 +140,7 @@ const Eyes2 = () => {
           onMouseEnter={() => BtnEnter()}
           onMouseLeave={() => BtnLeave()}
           ref={btnArrow1}
-          className="relative py-[1.1vw] px-[1.5vw] pr-[4.5vw] uppercase bg-[#212121] text-white text-[1vw] font-[NM] rounded-full flex gap-10 items-center justify-center mt-[4vw]">
+          className="relative py-[1.1vw] px-[1.5vw] pr-[4.5vw] uppercase bg-[#212121] text-white text-[1vw] max-xl:text-[1.4vw] font-[NM] rounded-full flex gap-10 items-center justify-center mt-[4vw]">
           Start the project
           <div
             ref={btnArrow2}
@@ -152,12 +152,14 @@ const Eyes2 = () => {
             </div>
           </div>
         </button>
-        <h1 className="text-[1.2vw] font-[NM] py-[.8vw]">OR</h1>
+        <h1 className="text-[1.2vw] font-[NM] py-[.8vw] max-xl:text-[1.8vw]">
+          OR
+        </h1>
         <button
           onMouseEnter={() => BtnEnter2()}
           onMouseLeave={() => BtnLeave2()}
           ref={btnArrow4}
-          className="relative mt-3 py-[1.1vw] px-[1.5vw] pr-[4.5vw] uppercase bg-[#CDEA68] border-[1px] border-[#212121] text-[#212121] text-[1vw] font-[NM] rounded-full flex gap-10 items-center justify-center mb-[10vw]">
+          className="relative mt-3 max-xl:mt-2 py-[1.1vw] px-[1.5vw] pr-[4.5vw] uppercase bg-[#CDEA68] border-[1px] border-[#212121] text-[#212121] text-[1vw] max-xl:text-[1.4vw] font-[NM] rounded-full flex gap-10 items-center justify-center mb-[10vw]">
           hello@ochi.design
           <div
             ref={btnArrow5}

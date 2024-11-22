@@ -6,8 +6,8 @@ const Footer = () => {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed="-.2"
-      className="w-full h-screen bg-[#f1f1f1] rounded-tl-3xl rounded-tr-3xl">
+      data-scroll-speed="-.1"
+      className="w-full h-screen bg-[#f1f1f1] rounded-tl-3xl rounded-tr-3xl max-xl:h-[60vw]">
       <div className="flex w-full h-full">
         <div className="w-1/2 h-full flex flex-col  px-16 ">
           <div className="w-full h-full">
@@ -57,11 +57,11 @@ const Footer = () => {
               </h1>
             </div>
           </div>
-          <div className="w-full h-full flex ">
+          <div className="w-full h-full flex max-1400:pt-[10vw] max-xl:pt-[0vw]">
             <div className=" w-full h-full">
               <div className=" mt-[2vw]">
-                <h1 className="text-[1.2vw] mb-5">S:</h1>
-                <div className="flex flex-col justify-between text-[1.1vw]">
+                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">S:</h1>
+                <div className="flex flex-col justify-between text-[1.1vw] max-1400:text-[1.4vw]">
                   <button className="cta">
                     <span className="hover-underline-animation tracking-tight capitalize">
                       instagram
@@ -105,8 +105,8 @@ const Footer = () => {
                 </div>
               </div>
               <div className=" mt-[2vw]">
-                <h1 className="text-[1.2vw] mb-5">Lx:</h1>
-                <div className="flex  text-[1.1vw]">
+                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">Lx:</h1>
+                <div className="flex  text-[1.1vw] max-1400:text-[1.4vw]">
                   <button className="cta relative">
                     <span className="hover-underline-animation tracking-tightcapitalize">
                       202-1965 W 4th Ave br
@@ -133,8 +133,8 @@ const Footer = () => {
                 </div>
               </div>
               <div className=" mt-[2vw]">
-                <h1 className="text-[1.2vw] mb-5">E:</h1>
-                <div className="flex flex-col justify-between text-[1.1vw]">
+                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">E:</h1>
+                <div className="flex flex-col justify-between text-[1.1vw] max-1400:text-[1.4vw]">
                   <button className="cta">
                     <span className="hover-underline-animation tracking-tight capitalize">
                       hello@ochi.design
@@ -150,8 +150,8 @@ const Footer = () => {
             </div>
             <div className=" w-full h-full flex justify-end items-end">
               <div className=" mb-[5vw] mr-[2vw]">
-                <h1 className="text-[1.2vw] mb-5">M:</h1>
-                <div className="flex flex-col justify-between text-[1.1vw]">
+                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">M:</h1>
+                <div className="flex flex-col justify-between text-[1.1vw] max-1400:text-[1.4vw]">
                   <button className="cta">
                     <span className="hover-underline-animation tracking-tight capitalize">
                       home

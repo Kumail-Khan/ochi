@@ -61,13 +61,13 @@ const Cards = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.6"
-      className=" w-full h-auto flex flex-col bg-[#f1f1f1] rounded-tl-3xl rounded-tr-3xl mt-[25vw] items-center pb-32">
+      className=" w-full h-auto flex flex-col bg-[#f1f1f1] rounded-tl-3xl rounded-tr-3xl mt-[25vw] items-center pb-32 max-xl:mt-[35vw]">
       <div className="w-full py-10  border-[#a0a0a0] border-b-[1px]">
-        <h1 className=" px-16 text-[4vw] tracking-tighter text-[#212121] font-normal font-[NM]">
+        <h1 className=" px-16 text-[4vw] tracking-tighter text-[#212121] font-normal font-[NM] max-xl:px-5">
           Featured projects
         </h1>
       </div>
-      <div className="cards   flex gap-6 px-16 pb-12 pt-24">
+      <div className="cards   flex gap-6 px-16 pb-12 pt-24 max-xl:px-5">
         <div className="cardcontainer relative  w-[50%] h-[40vw]">
           <div className="title flex gap-4 items-center pb-5 ">
             <div className="w-3 h-3  rounded-full bg-[#212121]"></div>
@@ -167,7 +167,7 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="cards   flex gap-6 px-16 pb-12 pt-24">
+      <div className="cards   flex gap-6 px-16 pb-12 pt-24 max-xl:px-5">
         <div className="cardcontainer relative  w-[50%] h-[40vw]">
           <div className="title flex gap-4 items-center pb-5 ">
             <div className="w-3 h-3  rounded-full bg-[#212121]"></div>
@@ -266,7 +266,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div className="cards   flex gap-6 px-16 pb-32 pt-24">
+      <div className="cards   flex gap-6 px-16 pb-32 pt-24 max-xl:px-5">
         <div className="cardcontainer relative  w-[50%] h-[40vw]">
           <div className="title flex gap-4 items-center pb-5 ">
             <div className="w-3 h-3  rounded-full bg-[#212121]"></div>
@@ -370,7 +370,7 @@ const Cards = () => {
         onMouseEnter={() => BtnEnter()}
         onMouseLeave={() => BtnLeave()}
         ref={btnArrow1}
-        className="relative mt-3 py-[1vw] px-[1.5vw] pr-[4.5vw] bg-[#212121] text-white text-[1.2vw] rounded-full flex gap-10 items-center justify-center">
+        className="relative mt-3 py-[1vw] px-[1.5vw] pr-[4.5vw]  bg-[#212121] capitalize text-white text-[1.2vw] max-xl:text-[1.5vw] rounded-full flex gap-10 items-center justify-center">
         View all case studies
         <div
           ref={btnArrow2}

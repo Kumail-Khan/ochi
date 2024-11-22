@@ -25,7 +25,7 @@ const Eyes = () => {
             data-scroll
             data-scroll-section
             data-scroll-speed="-.1"
-            className="absolute mt-[10vw] left-[35%] flex gap-10">
+            className="absolute mt-[10vw] left-[35%] flex gap-10 max-1400:mt-[15vw] max-xl:mt-[20vw]">
             <div className="flex items-center justify-center w-[15vw] h-[15vw] rounded-full bg-zinc-100">
               <div className="EyeOne relative w-[10vw] flex items-center justify-center h-[10vw] rounded-full bg-[#212121]">
                 <h1 className="text-[1.6vw] text-white uppercase font-[NM]">

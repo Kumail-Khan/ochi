@@ -96,12 +96,12 @@ const Reviews = () => {
   return (
     <div className="w-full  bg-[#f1f1f1] rounded-tl-3xl rounded-tr-3xl h-auto pb-96 font-[NM] text-[#212121]">
       <div className="w-full py-10 pt-28 border-[#a0a0a0] border-b-[1px]">
-        <h1 className=" px-16 text-[3.5vw] tracking-tighter text-[#212121] font-light font-[NM]">
+        <h1 className=" px-16 text-[3.5vw] tracking-tighter text-[#212121] font-light font-[NM] max-xl:px-5">
           Clients’ reviews
         </h1>
       </div>
-      <div className="flex w-full px-16 pt-3">
-        <div className="flex  w-1/2 text-[1.1vw]">
+      <div className="flex w-full px-16 pt-3 max-xl:px-5">
+        <div className="flex  w-1/2 text-[1.1vw] max-1400:text-[1.4vw]">
           <h1 className="w-1/2">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
@@ -116,7 +116,7 @@ const Reviews = () => {
           </h1>
           <h1 className="w-1/2">Services:</h1>
         </div>
-        <div className="flex justify-between w-1/2 text-[1.1vw]">
+        <div className="flex justify-between w-1/2 text-[1.1vw] max-1400:text-[1.4vw]">
           <h1>William Barnes</h1>
           <h1 className="uppercase text-[#afafaf] font-medium">Read</h1>
         </div>
@@ -131,7 +131,7 @@ const Reviews = () => {
               className="flex gap-2 rounded-full items-center justify-center mb-5 cursor-pointer">
               <button
                 ref={btnArrow3}
-                className=" py-[.3vw] px-[.8vw]  text-[#5b5b5b] uppercase text-[1vw] font-medium rounded-full border-[#5b5b5b] border-[1px] ">
+                className=" py-[.3vw] px-[.8vw]  text-[#5b5b5b] uppercase text-[1vw] font-medium rounded-full border-[#5b5b5b] border-[1px] max-1400:w-[11vw] max-1400:text-[1.1vw] max-1400:py-[.5vw]">
                 investors deck
               </button>
               <div
@@ -148,10 +148,10 @@ const Reviews = () => {
             <div
               onMouseEnter={() => BtnEnter2()}
               onMouseLeave={() => BtnLeave2()}
-              className="flex rounded-full gap-2 mr-14 items-center justify-center cursor-pointer">
+              className="flex rounded-full gap-2 mr-14 items-center justify-center cursor-pointer max-1400:mr-5">
               <button
                 ref={btnArrow7}
-                className=" py-[.3vw] w-[7vw]  text-[#5b5b5b] uppercase text-[1vw] font-medium rounded-full border-[#5b5b5b] border-[1px] ">
+                className=" py-[.3vw] w-[7vw]  text-[#5b5b5b] uppercase text-[1vw]  font-medium rounded-full border-[#5b5b5b] border-[1px] max-1400:w-[9vw] max-1400:text-[1.1vw] max-1400:py-[.5vw]">
                 sales deck
               </button>
               <div
@@ -170,9 +170,9 @@ const Reviews = () => {
         <div className="w-1/2">
           <img
             src="https://ochi.design/wp-content/uploads/2023/02/William-Barnes-1-300x300.png"
-            className="w-[8vw] rounded-2xl mt-24"
+            className="w-[8vw] rounded-2xl mt-24 max-1400:w-[9vw]"
           />
-          <p className="text-[1.1vw] font-normal pr-[14vw] mt-5">
+          <p className="text-[1.1vw] max-1400:text-[1.2vw] font-normal pr-[14vw] mt-5">
             They were transparent about the time and the stages of the project.
             The end product is high quality, and I feel confident about how they
             were handholding the client through the process. I feel like I can
@@ -184,7 +184,7 @@ const Reviews = () => {
       </div>
       <div className="more-reviews mt-20 text-[#383838]">
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Planetly
@@ -211,7 +211,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Workiz Easy
@@ -238,7 +238,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Premium Blend
@@ -265,7 +265,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Hypercare Systems
@@ -292,7 +292,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Officevibe
@@ -319,7 +319,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Orderlion
@@ -346,7 +346,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Black Book
@@ -373,7 +373,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="border-t-[1px] border-b-[1px] border-[#979797] py-6">
-          <div className="flex justify-between px-16  text-[1.1vw]">
+          <div className="flex justify-between px-16  text-[1.1vw] max-1400:text-[1.3vw] max-xl:px-5">
             <button className="cta">
               <span className="hover-underline-animation capitalize">
                 Trawa Energy
@@ -401,8 +401,8 @@ const Reviews = () => {
         </div>
       </div>
       {/* revies section end */}
-      <div className=" flex  gap-6 w-full h-auto px-16 pt-32">
-        <div className="bg-[#004D43] w-1/2 h-[25vw] rounded-2xl relative">
+      <div className=" flex  gap-6 w-full h-auto px-16 pt-32 max-xl:px-5">
+        <div className="bg-[#004D43] w-1/2 h-[25vw] rounded-2xl relative max-xl:w-[35%] max-xl:h-[30vw]">
           <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
             <img
               src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
@@ -413,7 +413,7 @@ const Reviews = () => {
             ©️2019-2024
           </h1>
         </div>
-        <div className="flex gap-6 w-1/2 h-[25vw] ">
+        <div className="flex gap-6 w-1/2 h-[25vw] max-xl:w-[65%] max-xl:h-[30vw]">
           <div className="relative bg-[#212121] w-1/2 rounded-2xl cursor-pointer">
             <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
               <img

@@ -64,7 +64,7 @@ const About = () => {
         data-scroll-section
         data-scroll-speed="-.1"
         className=" w-full pb-[5vw] bg-[#CDEA68] font-[NM] z-50 text-[#212121] rounded-tl-3xl rounded-tr-3xl">
-        <h1 className="text-[3.7vw] font-normal mr-[15vw] leading-none tracking-tight py-10 px-16">
+        <h1 className="text-[3.7vw] font-normal mr-[15vw] leading-none tracking-tight py-10 px-16 max-1400:text-[3.3vw] max-xl:px-5">
           Ochi is a strategic presentation agency for forward-thinking
           businesses that need to
           <p className="underline inline-block ml-[.6vw]">raise funds</p>, sell
@@ -74,7 +74,7 @@ const About = () => {
           </p>
           , and hire great peo­ple.
         </h1>
-        <div className="w-full border-[#8a8a8a] border-t-[1px] py-9 px-16 mt-[2vw] flex justify-between text-[1.1vw] font-normal">
+        <div className="w-full border-[#8a8a8a] border-t-[1px] py-9 px-16 max-xl:px-5 mt-[2vw] flex justify-between text-[1.1vw] font-normal max-1400:text-[1.4vw] max-1400:px-10">
           <div className="left w-[60%]">
             <h1 className="">What you can expect:</h1>
           </div>
@@ -90,7 +90,7 @@ const About = () => {
                 is what makes your message clear, convincing, and captivating.
               </p>
             </div>
-            <div className="w-2/4 pl-[8vw] flex flex-col justify-end">
+            <div className="w-2/4 pl-[8vw] flex flex-col justify-end max-xl:pl-[17vw]">
               {["S:", "Instagram", "Behance", "Facebook", "Linkedin"].map(
                 (items, index) => {
                   return (
@@ -108,7 +108,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full border-[#8a8a8a] border-t-[1px] py-5  px-16 mt-[7vw] flex ">
+        <div className="w-full border-[#8a8a8a] border-t-[1px] py-5  px-16 mt-[7vw] flex max-xl:px-5">
           <div className="w-1/2">
             <h1 className="text-[3.5vw] ">Our approach:</h1>
             <button
