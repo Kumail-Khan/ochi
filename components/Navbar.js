@@ -7,10 +7,37 @@ import gsap from "gsap";
 
 const Navbar = () => {
   const menuOpen = useRef();
+  const closeLineOne = useRef();
+  const closeLineTwo = useRef();
+  const menuText = useRef();
+  const menuTextTwo = useRef();
+
   function openMenu() {
     gsap.to(menuOpen.current, {
       top: 0,
       duration: 0.5,
+    });
+    gsap.from(closeLineOne.current, {
+      rotate: "1deg",
+      delay: 0.5,
+      opacity: 0,
+      duration: 0.3,
+    });
+    gsap.from(closeLineTwo.current, {
+      rotate: "1deg",
+      delay: 0.5,
+      opacity: 0,
+      duration: 0.3,
+    });
+    gsap.from(menuText.current, {
+      delay: 0.4,
+      opacity: 0,
+      duration: 0.4,
+    });
+    gsap.from(menuTextTwo.current, {
+      delay: 0.4,
+      opacity: 0,
+      duration: 0.4,
     });
   }
   function closeMenu() {
@@ -23,7 +50,7 @@ const Navbar = () => {
     <>
       <div
         id="nav-parent"
-        className="relative py-3 px-16 w-full flex justify-between items-center max-xl:px-5 max-xl:py-2">
+        className="relative py-3 px-16 w-full flex justify-between items-center max-xl:px-5 max-xl:py-2 max-lg:py-4">
         <div className="logo">
           <svg
             width="72"
@@ -81,7 +108,7 @@ const Navbar = () => {
       {/* menu option */}
       <div
         ref={menuOpen}
-        className="w-full h-screen bg-zinc-800 absolute -top-[150%] z-[100] lg:hidden">
+        className="w-full h-screen bg-zinc-800 absolute -top-[150%]  z-[100] lg:hidden">
         <div className="w-full h-screen bg-[#212121] fixed">
           <div
             id="nav-parent"
@@ -115,12 +142,16 @@ const Navbar = () => {
                 closeMenu();
               }}
               className="flex flex-col items-center justify-center cursor-pointer h-6">
-              <div className="w-6 h-[1px] bg-[white] rotate-[45deg]"></div>
-              <div className="w-6 h-[1px] bg-[white] -rotate-[45deg]"></div>
+              <div
+                ref={closeLineOne}
+                className="w-6 h-[1px] bg-[white] rotate-[45deg]"></div>
+              <div
+                ref={closeLineTwo}
+                className="w-6 h-[1px] bg-[white] -rotate-[45deg]"></div>
             </div>
           </div>
-          <div className="w-full h-full mt-16 border-t-[1px] border-t-[#7d7d7d] overflow-hidden">
-            <div className="links flex flex-col px-5 py-2">
+          <div className="w-full h-full mt-16 border-t-[1px] border-t-[#7d7d7d] overflow-hidden ">
+            <div ref={menuText} className="links flex flex-col px-5 py-2">
               {[
                 "Services",
                 "Our work",
@@ -129,7 +160,7 @@ const Navbar = () => {
                 "Contact us",
               ].map((items, index) => (
                 <button key={index} className="cta">
-                  <span className="hover-underline-animation text-[9vw] uppercase text-[#FFFFFF] font-[FG] leading-[8.5vw] tracking-tight  max-lg:after:h-[6px] max-lg:after:bg-[#FFFFFF] max-lg:after:w-[100%] max-lg:after:mb-[5px] max-lg:after:duration-[0.4s]">
+                  <span className="hover-underline-animation text-[80px] uppercase text-[#FFFFFF] font-[FG] leading-[65px] tracking-tight  max-lg:after:h-[6px] max-lg:after:bg-[#FFFFFF] max-lg:after:w-[100%] max-lg:after:mb-[5px] max-lg:after:duration-[0.4s]">
                     {items}
                   </span>
                   <path
@@ -140,12 +171,14 @@ const Navbar = () => {
                 </button>
               ))}
             </div>
-            <div className=" w-fit h-full">
-              <div className=" mt-[2vw]">
-                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">S:</h1>
-                <div className="flex flex-col justify-between text-[1.1vw] max-1400:text-[1.4vw]">
+            <div
+              ref={menuTextTwo}
+              className=" w-full  h-auto  justify-between text-[#FFFFFF] px-5 mt-3">
+              <div className=" mt-[1vw]">
+                <h1 className="text-[22px] mb-5">S:</h1>
+                <div className="flex flex-col justify-between text-[15px]">
                   <button className="cta">
-                    <span className="hover-underline-animation tracking-tight capitalize">
+                    <span className="hover-underline-animation tracking-tight capitalize max-lg:after:bg-[#FFFFFF]">
                       instagram
                     </span>
                     <path
@@ -155,7 +188,7 @@ const Navbar = () => {
                       transform="translate(30)"></path>
                   </button>
                   <button className="cta">
-                    <span className="hover-underline-animation tracking-tight capitalize">
+                    <span className="hover-underline-animation tracking-tight capitalize max-lg:after:bg-[#FFFFFF]">
                       Behance
                     </span>
                     <path
@@ -165,7 +198,7 @@ const Navbar = () => {
                       transform="translate(30)"></path>
                   </button>
                   <button className="cta">
-                    <span className="hover-underline-animation tracking-tight capitalize">
+                    <span className="hover-underline-animation tracking-tight capitalize max-lg:after:bg-[#FFFFFF]">
                       Facebook
                     </span>
                     <path
@@ -175,7 +208,7 @@ const Navbar = () => {
                       transform="translate(30)"></path>
                   </button>
                   <button className="cta">
-                    <span className="hover-underline-animation tracking-tight capitalize">
+                    <span className="hover-underline-animation tracking-tight capitalize max-lg:after:bg-[#FFFFFF]">
                       linkedin
                     </span>
                     <path
@@ -186,24 +219,24 @@ const Navbar = () => {
                   </button>
                 </div>
               </div>
-              <div className=" mt-[2vw]">
-                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">Lx:</h1>
-                <div className="flex  text-[1.1vw] max-1400:text-[1.4vw]">
+              <div className=" mt-[1vw]">
+                <h1 className="text-[22px] mb-5">Lx:</h1>
+                <div className="flex  text-[15px]">
                   <button className="cta relative">
-                    <span className="hover-underline-animation tracking-tightcapitalize">
+                    <span className="hover-underline-animation tracking-tightcapitalize max-lg:after:bg-[#FFFFFF]">
                       202-1965 W 4th Ave br
                     </span>
                     <br />
-                    <span className="hover-underline-animation tracking-tight capitalize absolute -left-[1.2vw]  ">
+                    <span className="hover-underline-animation tracking-tight capitalize absolute -left-[18px]   max-lg:after:bg-[#FFFFFF]">
                       Vancouver, Canada
                     </span>
                     <br />
                     <br />
-                    <span className="hover-underline-animation tracking-tight capitalize mt-10 absolute -left-[2vw] ">
+                    <span className="hover-underline-animation tracking-tight capitalize mt-10 absolute -left-[30px]  max-lg:after:bg-[#FFFFFF]">
                       30 Chukarina St
                     </span>
                     <br />
-                    <span className="hover-underline-animation tracking-tight  capitalize absolute -left-[2.7vw] ">
+                    <span className="hover-underline-animation tracking-tight  capitalize absolute -left-[40px]  max-lg:after:bg-[#FFFFFF]">
                       Lviv, Ukraine
                     </span>
                     <path
@@ -214,11 +247,11 @@ const Navbar = () => {
                   </button>
                 </div>
               </div>
-              <div className=" mt-[2vw]">
-                <h1 className="text-[1.2vw] max-1400:text-[1.6vw] mb-5">E:</h1>
-                <div className="flex flex-col justify-between text-[1.1vw] max-1400:text-[1.4vw]">
+              <div className=" mt-[1vw]">
+                <h1 className="text-[22px] mb-5">E:</h1>
+                <div className="flex flex-col justify-between text-[15px]">
                   <button className="cta">
-                    <span className="hover-underline-animation tracking-tight capitalize">
+                    <span className="hover-underline-animation tracking-tight capitalize max-lg:after:bg-[#FFFFFF]">
                       hello@ochi.design
                     </span>
                     <path
