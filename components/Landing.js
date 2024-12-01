@@ -8,7 +8,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const Landing = () => {
   const btnArrow1 = useRef();
   const btnArrow2 = useRef();
-  const btnArrow3 = useRef(); 
+  const btnArrow3 = useRef();
 
   function BtnEnter() {
     gsap.to(btnArrow1.current, {
@@ -135,8 +135,8 @@ const Landing = () => {
           </div>
           {["We create", "eye-Opening", "presentations"].map((items, index) => {
             return (
-              <>
-                <div key={index} className="masker max-mob:hidden">
+              <div key={index}>
+                <div className="masker max-mob:hidden">
                   <div className="flex items-end ">
                     {index === 1 && (
                       <motion.div
@@ -155,7 +155,7 @@ const Landing = () => {
                     </h1>
                   </div>
                 </div>
-                <div key={index} className="masker mob:hidden">
+                <div className="masker mob:hidden">
                   <div className="flex items-end ">
                     {index === 1 && (
                       <motion.div
@@ -174,7 +174,7 @@ const Landing = () => {
                     </h1>
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
           <div className="w-full border-t-[1px] font-[NM] border-zinc-400 text-[black] mt-[7vw] flex justify-between items-center py-4 px-16 max-1400:mt-[17vw] max-xl:mt-[10vw] max-lg:mt-[22vw] max-md:mt-[440px] max-mob:mt-[490px] max-xl:px-5 max-xl:py-1 max-lg:py-2 max-md:flex-col max-md:items-start gap-5">

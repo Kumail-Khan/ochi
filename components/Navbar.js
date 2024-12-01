@@ -78,9 +78,8 @@ const Navbar = () => {
         <div className="links flex gap-3 max-xl:gap-1 max-lg:hidden">
           {["Services", "Our work", "About us", "Insights", "Contact us"].map(
             (items, index) => (
-              <StyledWrapper>
+              <StyledWrapper key={index}>
                 <button
-                  key={index}
                   className={`text-[21px] w-[105px] text-black opacity-90 font-normal max-1400:text-[1.3vw] max-xl:w-[80px]  ${
                     index === 4 &&
                     "ml-[17.3vw] max-1400:ml-[8vw] max-xl:ml-[15vw]"

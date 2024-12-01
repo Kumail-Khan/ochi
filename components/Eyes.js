@@ -63,7 +63,7 @@ const Eyes = () => {
       <div className="w-full h-screen max-lg:flex max-lg:items-center max-lg:justify-center  md:hidden max-md:h-[65vw]">
         <div className="relative w-full h-full max-md:w-[100%] max-md:h-[100%] bg-cover bg-center bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]">
           <div className="absolute mt-[10vw] left-[35%] max-lg:left-[15%] flex gap-10 max-1400:mt-[15vw] max-xl:mt-[20vw]">
-            <div className="flex items-center justify-center w-[15vw] h-[15vw]  max-md:w-[22vw] max-md:h-[28vw] max-mob:w-[30vw] max-mob:h-[30vw] rounded-full bg-zinc-100">
+            <div className="flex items-center justify-center w-[15vw] h-[15vw]  max-md:w-[22vw] max-md:h-[22vw] max-mob:w-[30vw] max-mob:h-[30vw] rounded-full bg-zinc-100">
               <div className="EyeOne relative w-[14vw] h-[14vw] max-mob:w-[20vw] max-mob:h-[20vw]  flex items-center justify-center rounded-full bg-[#212121]">
                 <h1 className="text-[1.6vw] max-lg:text-[1.9vw] max-mob:text-[4vw]  text-white uppercase font-[NM]">
                   PLay
